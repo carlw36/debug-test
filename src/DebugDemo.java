@@ -161,10 +161,19 @@ public class DebugDemo {
         Product pen = new Product("Pen", 2.00, 20);
         Product backpack = new Product("Backpack", 55.00, 5);
 
+
+        System.out.println( notebook.toString() );
+        System.out.println( pen.toString() );
+        System.out.println( backpack.toString() );
+        System.out.println();
+
+
         ShoppingCart cart = new ShoppingCart();
         cart.add(notebook, 2);
         cart.add(pen, 3);
-        cart.add(backpack, 1);
+        cart.add(backpack, 1)
+
+        ;
 
         CheckoutService checkoutService = new CheckoutService();
         Receipt receipt = checkoutService.checkout(cart);
